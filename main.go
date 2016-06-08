@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	ib := &ib.IB{BackupFile: "../TestMyStuffs.dat", CreateBackup: true}
+	ib := ib.IB{BackupFile: "../TestMyStuffs.dat", CreateBackup: true}
 	c := ib.Start("localhost:7497")
 	c.CreateBackup = true
 	for {
